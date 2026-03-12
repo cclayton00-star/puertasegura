@@ -3,168 +3,219 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SecureGate - Seguridad al alcance de un toque</title>
-    <meta name="description" content="Abre los portones y accesos de tu edificio desde tu celular. Tecnología 100% IP, integración con Siri y monitoreo de calderas (DS 10).">
+    <title>SecureGate | Acceso IP Avanzado</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="dark-theme">
 
-    <!-- Header Section -->
-    <header class="navbar">
-        <div class="container nav-content">
-            <h1 class="logo">Secure<span>Gate</span></h1>
-            <nav class="links">
-                <a href="#benefits">Beneficios</a>
-                <a href="#boiler">DS 10</a>
-                <a href="#how">¿Cómo funciona?</a>
-                <a href="#pricing">Precios</a>
+    <div class="noise-overlay"></div>
+    <div class="ambient-glow glow-1"></div>
+    <div class="ambient-glow glow-2"></div>
+    <div class="ambient-glow glow-3"></div>
+
+    <header class="navbar glass">
+        <div class="container nav-wrap">
+            <div class="brand">
+                <span class="logo-icon"></span>
+                Secure<span class="gradient-text">Gate</span>
+            </div>
+            <nav class="nav-links">
+                <a href="#vision" class="nav-item">Visión</a>
+                <a href="#technology" class="nav-item">Tecnología</a>
+                <a href="#monitoring" class="nav-item">DS 10</a>
+                <a href="#pricing" class="nav-item">Tarifas</a>
             </nav>
-            <a href="#contact" class="btn btn-primary">Instalación Gratis</a>
+            <a href="#contact" class="btn btn-primary nav-cta">
+                <span class="btn-text">Instalación Gratis</span>
+                <span class="btn-glow"></span>
+            </a>
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero glass-panel">
-        <div class="container hero-content">
-            <div class="hero-text">
-                <h2 class="hero-title">Seguridad <span class="highlight">al alcance de un toque</span></h2>
-                <p class="hero-subtitle">La aplicación móvil definitiva para aperturar los portones de tu edificio y accesos peatonales, sin controles vulnerables y a una fracción del costo.</p>
-                <div class="hero-actions">
-                    <a href="#contact" class="btn btn-primary btn-large">Obtén Instalación Gratuita</a>
-                    <a href="#benefits" class="btn btn-secondary btn-large">Conoce Más</a>
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="hero">
+            <div class="container hero-grid">
+                <div class="hero-content reveal-left">
+                    <div class="badge-wrapper">
+                        <span class="badge gradient-border">NUEVA VERSIÓN 3.0</span>
+                    </div>
+                    <h1 class="hero-title">
+                        Apertura al <br>
+                        <span class="gradient-text typewriter">siguiente nivel</span>
+                    </h1>
+                    <p class="hero-desc">
+                        Revolucionamos la seguridad de tu edificio con tecnología 100% IP y cifrado militar. Sin controles vulnerables. Sin altos costos. Control total en tu bolsillo.
+                    </p>
+                    <div class="cta-group">
+                        <a href="#contact" class="btn btn-primary btn-xl magnetic">
+                            <span class="btn-text">Obtener Presupuesto</span>
+                            <span class="btn-glow"></span>
+                        </a>
+                        <div class="hero-stats">
+                            <div class="stat">
+                                <span class="stat-number">500</span>
+                                <span class="stat-label">CLP/Mes</span>
+                            </div>
+                            <div class="stat-divider"></div>
+                            <div class="stat">
+                                <span class="stat-number">0¢</span>
+                                <span class="stat-label">Instalación (20 cupos)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-visual reveal-right">
+                    <div class="image-showcase tilt-card">
+                        <div class="image-glow"></div>
+                        <img src="assets/hero.png" alt="SecureGate App Render" class="hero-img">
+                        <div class="floating-badge badge-1 glass">
+                            <div class="dot active"></div>
+                            <span>Acceso Vehicular</span>
+                        </div>
+                        <div class="floating-badge badge-2 glass">
+                            <div class="dot active"></div>
+                            <span>"Oye Siri, abre el portón"</span>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="hero-visual">
-                <img src="/C:/Users/cclayton/.gemini/antigravity/brain/0bf5fd1a-9697-4a80-94ed-d31284e2bde7/securegate_hero_render_1773278866268.png" alt="SecureGate App en acción" class="hero-image">
-                <!-- Fallback since it's going to github pages, we should use a placeholder or remove the image in deployment if the image is internal to this session, but for this demo, I will leave it relative/external -->
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Features Section -->
-    <section id="benefits" class="features section">
+        <!-- Technology Features -->
+        <section class="technology" id="technology">
+            <div class="container section-header text-center reveal-up">
+                <h2 class="section-title">Ingeniería <span class="gradient-text">Low-Cost</span>, Alta Seguridad</h2>
+                <p class="section-subtitle">Instalación en menos de 7 días. Tecnología IP robusta sin el costo abultado del hardware tradicional (como cámaras faciales).</p>
+            </div>
+            
+            <div class="container bento-grid">
+                <!-- Feature 1 -->
+                <div class="bento-card card-large glass tilt-card reveal-up" style="transition-delay: 0.1s;">
+                    <div class="card-content">
+                        <div class="icon-box gradient-icon">🔐</div>
+                        <h3>Anticlonación Infranqueable</h3>
+                        <p>Los controles RF convencionales son hackeables en segundos. Nuestra red 100% IP encriptada protege los accesos para que sólo residentes verificados puedan entrar.</p>
+                    </div>
+                    <div class="card-bg-effect"></div>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="bento-card card-tall glass tilt-card reveal-up" style="transition-delay: 0.2s;">
+                    <img src="assets/app.png" alt="Mobile App" class="mockup-img">
+                    <div class="card-content overlay-content">
+                        <h3>Todo el edificio a un toque</h3>
+                        <p>Gestiona portones, puertas peatonales y garajes simultáneamente.</p>
+                    </div>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="bento-card glass tilt-card reveal-up" style="transition-delay: 0.3s;">
+                    <div class="card-content">
+                        <div class="icon-box gradient-icon">⚡</div>
+                        <h3>Integración Smart</h3>
+                        <p>Compatible con comandos de voz nativos. Usa a Siri mientras conduces sin quitar las manos del volante.</p>
+                    </div>
+                </div>
+
+                <!-- Feature 4 -->
+                <div class="bento-card glass tilt-card reveal-up" style="transition-delay: 0.4s;">
+                    <div class="card-content">
+                        <div class="icon-box gradient-icon">🛠️</div>
+                        <h3>Soporte 24/7 Remoto</h3>
+                        <p>Plataforma domótica de vanguardia monitoreada 24/7. Resolvemos incidencias antes de que te des cuenta.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- DS 10 Boiler Section -->
+        <section class="monitoring" id="monitoring">
+            <div class="container split-section">
+                <div class="visual reveal-left tilt-card">
+                    <img src="assets/boiler.png" alt="Boiler IoT Sensors" class="tech-img border-glass">
+                    <div class="overlay-data glass">
+                        <div class="data-row">
+                            <span class="label">TEMP</span>
+                            <span class="value success">85°C</span>
+                        </div>
+                        <div class="data-row">
+                            <span class="label">PRESIÓN</span>
+                            <span class="value success">1.2 BAR</span>
+                        </div>
+                        <div class="data-row">
+                            <span class="label">ESTADO</span>
+                            <span class="value alert">ÓPTIMO</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="content reveal-right">
+                    <div class="badge-wrapper mb-4">
+                        <span class="badge gradient-border-orange">CUMPLIMIENTO DS 10</span>
+                    </div>
+                    <h2 class="section-title text-left">El futuro de tu edificio está en el <span class="gradient-text-orange">Monitoreo IoT</span></h2>
+                    <p class="section-paragraph">
+                        La misma arquitectura IP instalada para los portones se expande hacia el cuarto de calderas. A través de sensores de precisión, monitoreamos las operaciones críticas en tiempo real.
+                    </p>
+                    <ul class="check-list">
+                        <li>
+                            <div class="check-icon">✓</div>
+                            <div class="check-text">Cumple legalmente con el Decreto Supremo 10 para Chile.</div>
+                        </li>
+                        <li>
+                            <div class="check-icon">✓</div>
+                            <div class="check-text">Eficientiza consumos de gas y costos de mantención.</div>
+                        </li>
+                        <li>
+                            <div class="check-icon">✓</div>
+                            <div class="check-text">Alertas instantáneas al conserje para asegurar agua caliente constante.</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing & Contact CTA -->
+        <section class="cta-section" id="contact">
+            <div class="container cta-box glass reveal-up">
+                <div class="cta-ring ring-1"></div>
+                <div class="cta-ring ring-2"></div>
+                
+                <div class="cta-content">
+                    <h2 class="cta-title">Seguridad inquebrantable por <span class="gradient-text">menos de lo que cuesta un café</span></h2>
+                    <p class="cta-subtitle">Solo $500 CLP mensuales por residente. Instalación gratuita rápida y sin obras pesadas.</p>
+                    
+                    <form class="sleek-form" id="lead-form">
+                        <div class="form-grid">
+                            <div class="input-group">
+                                <input type="text" id="name" placeholder=" " required>
+                                <label for="name">Administrador o Copropietario</label>
+                            </div>
+                            <div class="input-group">
+                                <input type="email" id="email" placeholder=" " required>
+                                <label for="email">Correo Electrónico</label>
+                            </div>
+                            <div class="input-group full-width">
+                                <input type="text" id="building" placeholder=" " required>
+                                <label for="building">Nombre del Edificio y Comuna</label>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-xl submit-btn magnetic">
+                            <span class="btn-text">Solicitar los Primeros 20 Cupos</span>
+                            <span class="btn-glow"></span>
+                        </button>
+                        <div id="form-success" class="success-message">Mensaje enviado. Un asesor te contactará hoy mismo.</div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer border-glass text-center">
         <div class="container">
-            <h2 class="section-title">Tecnología Inteligente y Segura</h2>
-            <div class="grid features-grid">
-                <div class="feature-card glass-panel">
-                    <div class="icon">🔒</div>
-                    <h3>Anticlonación 100% IP</h3>
-                    <p>Olvídate de los controles antiguos. Nuestra tecnología es invulnerable a dispositivos que copian señales de radiofrecuencia (RF). Cada apertura está encriptada.</p>
-                </div>
-                <div class="feature-card glass-panel">
-                    <div class="icon">🎙️</div>
-                    <h3>Integración con "Oye Siri"</h3>
-                    <p>Apertura tu acceso vehicular cómodamente hablándole a tu smartphone. Cero distracciones.</p>
-                </div>
-                <div class="feature-card glass-panel">
-                    <div class="icon">⚡</div>
-                    <h3>No Requiere Hardware Costoso</h3>
-                    <p>A diferencia de sistemas de detección facial, nuestra plataforma domótica IP es "Low-Cost" y puede instalarse en un máximo de una semana.</p>
-                </div>
-                <div class="feature-card glass-panel">
-                    <div class="icon">🔑</div>
-                    <h3>Acceso Centralizado</h3>
-                    <p>Controla el acceso peatonal, portón principal y garaje desde una única aplicación en tu teléfono.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Boiler Monitoring Section -->
-    <section id="boiler" class="boiler section">
-        <div class="container split-section">
-            <div class="split-content">
-                <h2 class="section-title text-left">Preparado para el Decreto Supremo 10</h2>
-                <h3 class="highlight-text">Monitoreo Online de Calderas en Tiempo Real</h3>
-                <p>Nuestra misma infraestructura ("cerebro") instalada para los portones, funciona como base para llevar tu edificio al siguiente nivel:</p>
-                <ul class="benefit-list">
-                    <li>✓ Cumple con la normativa legal chilena (DS 10).</li>
-                    <li>✓ Sensores de IoT conectados directamente a las calderas.</li>
-                    <li>✓ Ahorro y eficiencia en consumo de gas.</li>
-                    <li>✓ Alertas tempranas de fallas directo al conserje (¡Jamás se queden sin agua caliente en la mañana!).</li>
-                </ul>
-            </div>
-            <div class="split-visual glass-panel flex-center">
-                <div class="icon icon-large">🔥</div>
-            </div>
-        </div>
-    </section>
-
-    <!-- How It Works Section -->
-    <section id="how" class="how section dark-section">
-        <div class="container">
-            <h2 class="section-title">Instalación en Tiempo Récord</h2>
-            <div class="grid steps-grid">
-                <div class="step text-center">
-                    <div class="step-num highlight">1</div>
-                    <h4 class="step-title">Evaluación Rápida</h4>
-                    <p>Analizamos tus portones en 24 horas.</p>
-                </div>
-                <div class="step text-center">
-                    <div class="step-num highlight">2</div>
-                    <h4 class="step-title">Instalación Low-Cost</h4>
-                    <p>En tan solo una semana, montamos el controlador IP.</p>
-                </div>
-                <div class="step text-center">
-                    <div class="step-num highlight">3</div>
-                    <h4 class="step-title">Capacitación</h4>
-                    <p>Entrenamos a conserjes y residentes.</p>
-                </div>
-                <div class="step text-center">
-                    <div class="step-num highlight">4</div>
-                    <h4 class="step-title">Soporte 24/7</h4>
-                    <p>Mantenemos tu sistema de acceso protegido en línea.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Pricing Section -->
-    <section id="pricing" class="pricing section">
-        <div class="container text-center">
-            <h2 class="section-title">El precio de tu seguridad integral</h2>
-            <div class="pricing-card glass-panel">
-                <p class="pricing-subtitle">Por residente, más barato que un café al mes</p>
-                <div class="price">
-                    <span class="currency">$</span>
-                    <span class="amount">500</span>
-                    <span class="period"> CLP / mes</span>
-                </div>
-                <div class="offer animate-pulse">
-                    <span class="icon">✨</span> ¡Oferta exclusiva! Instalación gratis para los primeros 20 edificios.
-                </div>
-                <a href="#contact" class="btn btn-primary btn-large mt-4">Asegurar Promoción</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact section dark-section border-top">
-        <div class="container split-section">
-            <div class="split-content text-center">
-                <h2 class="section-title text-left">¿Listo para modernizar tu edificio?</h2>
-                <p class="text-left mb-4">Administradores, miembros del comité y copropietarios: Contáctennos hoy para aprovechar la promo de instalación gratuita.</p>
-                <form id="contact-form" class="form glass-panel">
-                    <div class="form-group">
-                        <input type="text" id="name" placeholder="Nombre completo" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" id="email" placeholder="Correo electrónico" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="text" id="building" placeholder="Nombre del Edificio / Comuna" required>
-                    </div>
-                    <button type="submit" class="btn btn-primary btn-submit">Agenda tu Evaluación</button>
-                    <p id="form-msg" class="msg" style="display:none; color: #257bf4; font-weight: bold; margin-top:10px;">¡Gracias! Nos pondremos en contacto a la brevedad.</p>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <div class="container text-center footer-content">
-            <p>&copy; 2026 SecureGate. Tecnología IP. Todos los derechos reservados.</p>
+            <div class="logo-foot mb-4">Secure<span class="gradient-text">Gate</span></div>
+            <p class="footer-copy">© 2026 Plataforma de Acceso IP Segura. Todos los derechos reservados.</p>
         </div>
     </footer>
 
